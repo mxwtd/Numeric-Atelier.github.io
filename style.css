@@ -1,0 +1,264 @@
+
+html {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Digital Dot Roadsign"; src: url("//db.onlinewebfonts.com/t/edc0fef0cd7c09418f3ff9749e066745.eot"); src: url("//db.onlinewebfonts.com/t/edc0fef0cd7c09418f3ff9749e066745.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/edc0fef0cd7c09418f3ff9749e066745.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/edc0fef0cd7c09418f3ff9749e066745.woff") format("woff"), url("//db.onlinewebfonts.com/t/edc0fef0cd7c09418f3ff9749e066745.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/edc0fef0cd7c09418f3ff9749e066745.svg#Digital Dot Roadsign") format("svg"); 
+}
+
+/* background gradient */
+
+.css-selector {
+    background: linear-gradient(134deg, #212121, #454545, #686FFD);
+    background-size: 600% 600%;
+
+    -webkit-animation: background_gradient 7s ease infinite;
+    -moz-animation: background_gradient 7s ease infinite;
+    animation: background_gradient 7s ease infinite;
+}
+
+@-webkit-keyframes background_gradient {
+    0%{background-position:31% 0%}
+    50%{background-position:70% 100%}
+    100%{background-position:31% 0%}
+}
+@-moz-keyframes background_gradient {
+    0%{background-position:31% 0%}
+    50%{background-position:70% 100%}
+    100%{background-position:31% 0%}
+}
+@keyframes background_gradient { 
+    0%{background-position:31% 0%}
+    50%{background-position:70% 100%}
+    100%{background-position:31% 0%}
+}
+
+/* header */
+ .nav-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+ }
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+ .logo {
+    width: 12vw;
+    margin: 0;
+    margin-top: -6%;
+    padding: 0;
+ }
+
+ .logo img {
+    width: 100%;
+    height: auto;
+ }
+
+ul {
+    margin: 5%;
+    margin-left: -2%;
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 25px 0;
+    border-radius: 25px;
+}
+
+li {
+    margin: auto;
+    color: #FAF086;
+    font-size: 1.875rem;
+    cursor: pointer;
+    font-family: "Digital Dot Roadsign", sans-serif;
+}
+
+li:hover {
+    transform: scale(1.06);
+    transition: transform 1s ease-in-out;
+    filter: brightness(150%);
+}
+
+li:after {
+  display: block;
+}
+
+li:hover:after {
+    transform: scaleX(1);
+}
+
+/* main landing page */
+
+.intro-banner {
+    width: 65vw;
+    display: block;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -3.5%;
+}
+
+.intro-banner img {
+  width: 100%;
+  margin-left: 50px;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 25px;
+}
+
+.intro-banner img:hover {
+    transform: scale(1.02);
+    transition: transform 1s ease-out;
+    filter: brightness(120%);
+}
+
+/* About */
+
+.about {
+    position: relative;
+}
+
+.about, h2 {
+    text-align: center;
+    font-family: "Digital Dot Roadsign", sans-serif;
+    font-size: 4.5rem;
+    color: #FAF086;
+    font-weight: 5;
+    margin-bottom: 8%;
+    text-shadow: 1px 1px 1px rgba(104, 111, 253);
+}
+
+/* P CONTAINER 1 */
+
+#container {
+    text-align: left;
+    font-family: "Digital Dot Roadsign", sans-serif;
+    font-size: 1.7rem;
+    color: #FAF086;
+    font-weight: 5;
+    background: linear-gradient(134deg, rgba(45, 45, 45, 1), rgba(69, 69, 69, 1), rgba(104, 111, 253, 0.9));
+    padding: 20px;
+    border-radius: 25px;
+    margin-left: 6%;
+    margin-top: 5%;
+    margin-right: 750px;
+    margin-top: -560px;
+    z-index: 100;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+#container:hover {
+    transform: scale(1.02);
+    transition: all 1s ease;
+}
+
+/* P CONTAINER 2 */
+
+#container-2 {
+    text-align: right;
+    font-family: "Digital Dot Roadsign", sans-serif;
+    font-size: 1.7rem;
+    color: #FAF086;
+    font-weight: 5;
+    background: linear-gradient(134deg, rgba(45, 45, 45, 0.9), #454545, #686FFD);
+    padding: 20px;
+    border-radius: 25px;
+    margin-right: 6%;
+    margin-top: 5%;
+    margin-left: 750px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+#container-2:hover {
+    transform: scale(1.02);
+    transition: all 1s ease;
+}
+
+/* rest of about */
+
+.title-box {
+    font-size: 2rem;
+}
+
+.about-img {
+    width: 75vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -3.5%;
+    border-radius: 25px;
+    position: relative;
+    z-index: -10;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.about-img img:hover {
+    filter: brightness(120%);
+}
+
+/*team section*/
+
+.team-section {
+    margin-top: 10%;
+}
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 100px;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+    margin-top: -35%;
+}
+
+.team img {
+    width: 17rem;
+    border-radius: 50%;
+    padding: 0 50px;
+    filter: grayscale(90%);
+}
+
+.team h3 {
+    font-size: 1.5rem;
+    color: #FAF086;
+    font-family: "Digital Dot Roadsign", sans-serif;
+    text-shadow: 1px 1px 1px rgba(104, 111, 253);
+}
+.team p {
+    font-size: 1.5rem;
+    color: #FAF086;
+    font-family: "Digital Dot Roadsign", sans-serif;
+    text-shadow: 1px 1px 1px rgba(104, 111, 253);
+}
+
+.team-banner {
+    width: 75vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -3.5%;
+    border-radius: 25px;
+    position: relative;
+    z-index: -10;
+    filter: blur(2px);
+    
+}
+
+/* footer */
+
+footer {
+    margin-top: 100px;
+    font-size: 2rem;
+    font-family: "Digital Dot Roadsign", sans-serif;
+    color: #FAF086;
+    text-align: center;
+}
